@@ -1,0 +1,55 @@
+﻿@page
+@model Moment1._2.Pages.aboutModel
+
+<!-- Lagrar sidans namn -->
+@{
+	ViewData["title"] = "Om mig";
+}
+
+<!-- Innehåll -->
+<h1>Om mig</h1>
+<p>Jag är 32 år och bor i Nyköping vid Sörmlandskusten. 
+	I skrivande stund läser jag webbutveckling andra året vid Mittuniversitetet. 
+	Jag började koda på egen hand för ca två år sedan.
+	Jag har tidigare arbetat som bl.a. frilansande facköversättare. 
+	För närvarande arbetar jag på Hemköp.
+	När jag inte kodar lyssnar jag på musik eller gymmar, det senare fyra gånger i veckan.
+	Här följer en översikt över de program/tekniker som jag i skrivande stund har fått lära mig. 
+	En översikt över alla kurser som ingår i utbildningen med länk till kursplan finns 
+	<a href="https://studenter.miun.se/~mazi2001/writeable/dt173g/moment5/webbplats/">här</a>.</p>
+
+<!-- Array med kompetenser -->
+@{
+	string[] skills =
+			{
+		"HTML",
+		"CSS/SASS",
+		"JavaScript",
+		"PHP",
+		"WordPress",
+		"SQL/MySQL",
+		"Bildbehandling",
+		"Webbdesign i Adobe XD",
+		"MongoDB",
+		"Webbanvändbarhet och tillgänglighet",
+		"Gulp",
+		"Git",
+		"Node.js/npm",
+		"Express",
+		"TypeScript",
+		"C#",
+		"React"
+	};
+}
+
+<h2>Kompetens</h2>
+
+<!-- Loopar igenom arrayen ovan och skriver ut -->
+<ul>
+	@{
+		foreach(string skill in skills)
+		{
+			<li class="skill">@skill</li>
+		}
+	}
+</ul>

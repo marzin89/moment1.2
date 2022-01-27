@@ -1,0 +1,257 @@
+﻿/* Mobil */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma;
+    font-size: 1.1em;
+    background-color: rgb(205, 220, 220);
+}
+
+#page-wrapper {
+    display: block;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 120px;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(170, 200, 200);
+    overflow: auto;
+    height: 80px;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgb(160, 170, 190);
+}
+
+#logo {
+    width: 31.25%;
+    max-width: 100px;
+    float: left;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#date {
+    width: 50%;
+    max-width: 384px;
+    float: left;
+    margin: 5px 0;
+    text-align: center;
+}
+
+#nav-icon {
+    display: block;
+    width: 11%;
+    max-width: 35px;
+    height: 35px;
+    font-size: 3em;
+    float: right;
+    text-decoration: none;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 10px 0;
+    border: 1px solid rgb(160, 170, 190);
+}
+
+.nav > li {
+    padding: 5px 10px;
+}
+
+.nav > li:hover {
+    background-color: rgb(50, 100, 100);
+} 
+
+#mobile-nav {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: rgb(170, 200, 200);
+}
+
+#mobile-nav:target {
+    display: block;
+}
+
+#desktop-nav {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(50, 100, 100);
+}
+
+a:hover {
+    color: white;
+}
+
+button {
+    display: none;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 5px 0;
+    width: 100%;
+    background-color: rgb(50, 150, 150);
+    border: none;
+}
+
+#main-wrapper {
+    padding: 50px 10px;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.5;
+    color: rgb(50, 100, 100);
+}
+
+section {
+    padding: 20px 10px;
+    background-color: rgb(170, 200, 200);
+    border: 1px solid rgb(160, 170, 190);
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(200, 200, 150);
+    padding: 5px 10px;
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(170, 200, 200);
+    border-top: 1px solid rgb(160, 170, 190);
+}
+
+.active-page {
+    background-color: rgb(50, 100, 100);
+}
+
+.active-page-link {
+    color: white;
+}
+
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(50, 100, 100);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 5px 10px;
+    color: rgb(50, 100, 100);
+}
+
+.course, .skill {
+    font-style: oblique;
+}
+
+/* Desktop */
+@media only screen and (min-width: 769px) {
+    #page-wrapper {
+        padding-bottom: 70px;
+    }
+
+    header {
+        height: 80px;
+        padding: 10px;
+    }
+
+    #date {
+        max-width: 232px;
+        float: right;
+        font-size: 1em;
+    }
+
+    #nav-icon {
+        display: none;
+    }
+
+    #logo {
+        width: 200px;
+    }
+
+    #desktop-nav {
+        display: block;
+        width: 33%;
+        float: left;
+        min-height: 100vh;
+        padding-right: 10px;
+    }
+
+    #desktop-nav > ul {
+        background-color: rgb(170, 200, 200);
+        padding: 0;
+    }
+
+    section {
+        width: 67%;
+        float: right;
+        padding: 20px;
+    }
+
+    #main-wrapper, #header-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    #footer-wrapper {
+        max-width: 550px;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    button {
+        display: block;
+        margin-top: 5px;
+        background-color: rgb(50, 100, 150);
+        border: 1px solid rgb(30, 80, 130);
+        color: white;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    #author {
+        width: 25%;
+        float: left;
+    }
+
+    #contact {
+        width: 75%;
+        float: right;
+    }
+
+    footer {
+        height: 70px;
+    }
+}

@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "SyiogRc+XFH71Q1CEmiKyGjpofqBG3q0mORU9LzSZ30=",
+  "Source": "Moment1.2",
+  "BasePath": "_content/Moment1.2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Moment1.2\\wwwroot",
+      "Source": "Moment1.2",
+      "ContentRoot": "C:\\Users\\Marco\\Documents\\Webbutveckling distans\\Webbutveckling med .NET\\moment1\\Moment1.2\\Moment1.2\\wwwroot\\",
+      "BasePath": "_content/Moment1.2",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Marco\\Documents\\Webbutveckling distans\\Webbutveckling med .NET\\moment1\\Moment1.2\\Moment1.2\\wwwroot\\css\\styles.css",
+      "SourceId": "Moment1.2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Marco\\Documents\\Webbutveckling distans\\Webbutveckling med .NET\\moment1\\Moment1.2\\Moment1.2\\wwwroot\\",
+      "BasePath": "_content/Moment1.2",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Marco\\Documents\\Webbutveckling distans\\Webbutveckling med .NET\\moment1\\Moment1.2\\Moment1.2\\wwwroot\\images\\logo.png",
+      "SourceId": "Moment1.2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Marco\\Documents\\Webbutveckling distans\\Webbutveckling med .NET\\moment1\\Moment1.2\\Moment1.2\\wwwroot\\",
+      "BasePath": "_content/Moment1.2",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\Marco\\Documents\\Webbutveckling distans\\Webbutveckling med .NET\\moment1\\Moment1.2\\Moment1.2\\wwwroot\\js\\main.js",
+      "SourceId": "Moment1.2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Marco\\Documents\\Webbutveckling distans\\Webbutveckling med .NET\\moment1\\Moment1.2\\Moment1.2\\wwwroot\\",
+      "BasePath": "_content/Moment1.2",
+      "RelativePath": "js/main.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\main.js"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+﻿@page
+@model Moment1._2.Pages.razorModel
+
+<!-- Lagrar sidans namn -->
+@{
+	ViewData["title"] = "Razor";
+}
+
+<!-- Innehåll -->
+<h1>Razor</h1>
+<h2>Information</h2>
+
+<!-- Skriver ut det aktuella datumet -->
+<p><b>Datum/klockslag:</b> @DateTime.Now</p>
+
+<!-- Skriver ut om det är måndag eller inte -->
+@{
+	if (DateTime.Now.DayOfWeek == DayOfWeek.Monday)
+	{
+		<p>I dag är det måndag.</p>
+	}
+	else
+	{
+		<p>I dag är det <b>inte</b> måndag.</p>
+	}
+}
+
+<h2>Kurser jag läst</h2>
+
+<!-- Array med kurser -->
+@{
+	string[] courses =
+	{
+		"DT057G, Webbutveckling I",
+		"DT084G, Introduktion till programmering i JavaScript",
+		"DT163G, Digital bildbehandling för webb",
+		"GD008G, Typografi och form för webb",
+		"DT093G, Webbutveckling II",
+		"DT003G, Databaser",
+		"DT152G, Webbdesign för CMS",
+		"DT068G, Webbanvändbarhet",
+		"DT173G, Webbutveckling III",
+		"IK060G, Projektledning",
+		"DT071G, Programmering i C#.NET",
+		"DT162G, Javascriptbaserad webbutveckling"
+	};
+	
+	// Deklarerar en ny lista och lägger till arrayen
+	List<string> courseList = new List<string>();
+	courseList.AddRange(courses);
+}
+
+<!-- Skriver ut kurserna i arrayen ovan -->
+<ul>
+	@{
+		foreach(string course in courseList)
+		{
+			<li class="course">@course</li>
+		}
+	}
+</ul>
